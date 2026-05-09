@@ -3,7 +3,8 @@ namespace authorization;
 public class UserId
 {
     public long Id { get; }
-    UserId(long id)
+    
+    public UserId(long id)
     {
         Id = id;
     }
@@ -24,11 +25,11 @@ public class UserId
     }
 }
 
-
 public class User
 {
     public string Username { get; }
     public UserId Id { get; }
+    
     public User(string name, UserId id)
     {
         Username = name;
