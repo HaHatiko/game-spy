@@ -19,10 +19,10 @@ namespace RoomService
         {
             var serviceSession = GetSession(session);
 
-            if (serviceSession.IsAllPlayersReady())
+            if (serviceSession.IsAllPlayersReady() && !serviceSession.IsStartingNewGame)
                 return serviceSession.StartGame();
 
-            Logger.Log($"Not all players ready");
+            Logger.Log($"Not all players ready or already ingame");
             return null;
         }
 
@@ -64,6 +64,5 @@ namespace RoomService
                 $"LobbyService expects LobbySession, but got {session.GetType().Name}",
                 nameof(session));
         }
-
     }
 }

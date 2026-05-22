@@ -11,6 +11,8 @@ namespace RoomService
         public RoomServiceGameSession GameSession { get; } = new();
         public UserId CreatorId { get; private set; } = creatorId;
         public bool IsStartingNewGame { get; private set; } = false;
+        public event Action? OnGameStarted;
+
         public LobbySettings Settings { get; set; } = new(
             MaxPlayers: 8,
             Status: RoomStatus.Waiting,
@@ -59,6 +61,9 @@ namespace RoomService
                 }
 
             IsStartingNewGame = true;
+            Settings = new LobbySettings(Settings.MaxPlayers, RoomStatus.InGame, Settings.Theme);
+            OnGameStarted?.Invoke();
+
             return GameSession;
         }
 
