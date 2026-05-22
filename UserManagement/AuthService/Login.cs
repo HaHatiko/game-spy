@@ -12,7 +12,7 @@ public class LoginData
     }
 }
 
-interface ILoginService
+public interface ILoginService
 {
     User? Login(LoginData login);
 }
