@@ -4,9 +4,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagement", "UserManagement\UserManagement.csproj", "{A9B70730-EB6C-4DF6-90FF-F44892297D59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomSevice", "RoomSevice\RoomSevice.csproj", "{1BBC955E-AC7B-4BDB-8E04-F02AAE363C1B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomService", "RoomService\RoomService.csproj", "{1BBC955E-AC7B-4BDB-8E04-F02AAE363C1B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameLogic", "GameLogic\GameLogic.csproj", "{4AB9F80D-BB83-4F16-8AEB-B267A4B1DD15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardsService", "CardsService\CardsService.csproj", "{FDC148BB-BEFC-413C-A45F-DD0751F55B5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +32,9 @@ Global
 		{4AB9F80D-BB83-4F16-8AEB-B267A4B1DD15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AB9F80D-BB83-4F16-8AEB-B267A4B1DD15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AB9F80D-BB83-4F16-8AEB-B267A4B1DD15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDC148BB-BEFC-413C-A45F-DD0751F55B5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDC148BB-BEFC-413C-A45F-DD0751F55B5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDC148BB-BEFC-413C-A45F-DD0751F55B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDC148BB-BEFC-413C-A45F-DD0751F55B5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
